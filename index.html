@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="coffee-icon">☕</span>
+      <span>JavaScript Cafe</span>
+      <span class="heart">♡</span>
+    </div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#order">My Order</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Welcome Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="small-title">Good food, better code ♡</p>
+        <h1>Welcome to<br>JavaScript Cafe</h1>
+        <p class="description">
+          Fresh brews, cozy vibes, and a little something to brighten your day.
+        </p>
+        <a href="#menu" class="menu-button">☕ View Menu</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="window">
+          <div class="sun"></div>
+          <span class="leaf leaf-one">🍂</span>
+          <span class="leaf leaf-two">🍁</span>
+          <span class="leaf leaf-three">🍂</span>
+          <div class="coffee-cup">
+            <span>☕</span>
+          </div>
+          <div class="plant">🌿</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="mini-label">☕ JavaScript Cafe</p>
+          <h2>Place your order</h2>
+          <p>Choose something cozy from our menu.</p>
+        </div>
+      </div>
+
+      <!-- Order Card -->
+      <div class="order-card" id="order">
+        <div class="form-group">
+          <label for="orderSelect">Select your order</label>
+          <select id="orderSelect">
+            <option value="">Choose a drink or treat...</option>
+            <option value="Latte">Latte</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Iced Coffee">Iced Coffee</option>
+            <option value="Matcha Latte">Matcha Latte</option>
+            <option value="Chocolate Cake">Chocolate Cake</option>
+            <option value="Unavailable Item">Unavailable Item</option>
+          </select>
+        </div>
+        <button id="startOrderButton">☕ Start Order</button>
+      </div>
+
+      <!-- Status Box -->
+      <div class="status-card">
+        <div class="status-icon">☕</div>
+        <div class="status-content">
+          <h3>Order Status</h3>
+          <div id="orderStatus">Your order process will appear here...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ♡ & coffee</p>
+    <span>JavaScript Cafe • Good food, better code</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
